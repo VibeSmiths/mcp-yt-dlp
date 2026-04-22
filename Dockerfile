@@ -1,5 +1,5 @@
 FROM node:22-alpine AS builder
-LABEL org.opencontainers.image.source="https://github.com/VibeSmiths/mcp-yt-dlp" \
+LABEL org.opencontainers.image.source="https://github.com/Mossworks-Labs/mcp-yt-dlp" \
       org.opencontainers.image.description="MCP server: yt-dlp" \
       org.opencontainers.image.licenses="MIT"
 
@@ -12,7 +12,7 @@ RUN npm run build
 # ─── Runtime image ────────────────────────────────────────────────────────────
 FROM node:22-alpine AS runtime
 
-LABEL org.opencontainers.image.source="https://github.com/VibeSmiths/mcp-yt-dlp"
+LABEL org.opencontainers.image.source="https://github.com/Mossworks-Labs/mcp-yt-dlp"
 LABEL org.opencontainers.image.description="MCP server for yt-dlp video tools"
 LABEL org.opencontainers.image.licenses="MIT"
 

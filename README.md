@@ -2,7 +2,7 @@
 
 MCP server for YouTube video info, formats, subtitles, and download via yt-dlp.
 
-Part of the [CRAFT](https://github.com/VibeSmiths/VideoIdeas) content studio.
+Part of the [CRAFT](https://github.com/Mossworks-Labs/craft) content studio.
 
 ## Tools
 

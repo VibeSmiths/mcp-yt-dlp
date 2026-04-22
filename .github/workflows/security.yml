@@ -14,12 +14,12 @@ permissions:
 
 jobs:
   codeql:
-    uses: VibeSmiths/.github/.github/workflows/codeql.yml@main
+    uses: Mossworks-Labs/.github/.github/workflows/codeql.yml@main
     secrets: inherit
     with:
       languages: javascript
 
   dependency-review:
     if: github.event_name == 'pull_request'
-    uses: VibeSmiths/.github/.github/workflows/dependency-review.yml@main
+    uses: Mossworks-Labs/.github/.github/workflows/dependency-review.yml@main
     secrets: inherit
